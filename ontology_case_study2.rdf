@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/"
+     xml:base="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:SensorEquipamentOntology="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#geraLeitura -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#geraLeitura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#indicaNecessidadeManuntecao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#indicaNecessidadeManuntecao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#possuiSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#possuiSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#temValor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#temValor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#necessitaManutencao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#necessitaManutencao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#valorLeituraSensor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#valorLeituraSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+        <SensorEquipamentOntology:temValor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#MáquinaTeste01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#MáquinaTeste01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+        <SensorEquipamentOntology:possuiSensor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#MáquinaTeste02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#MáquinaTeste02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+        <SensorEquipamentOntology:possuiSensor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S5"/>
+        <SensorEquipamentOntology:possuiSensor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S6"/>
+        <SensorEquipamentOntology:possuiSensor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#MáquinaTeste03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#MáquinaTeste03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+        <SensorEquipamentOntology:possuiSensor rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S1"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S2"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S3"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S4"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S5"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S6"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Sensor_S7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S7"/>
+        <SensorEquipamentOntology:geraLeitura rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Leitura_Sensor_S7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Valor_Sensor_S7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+        <SensorEquipamentOntology:valorLeituraSensor rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</SensorEquipamentOntology:valorLeituraSensor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s5">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s6">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s7">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura5">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura5">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura6">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura6">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura7">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura7">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S1"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#LeituraSensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#ValorSensor"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#possuiSensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#geraLeitura"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#temValor"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#valorLeituraSensor"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura"/>
+                                                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#necessitaManutencao"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#Máquina"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S5"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s5"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S6"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s6"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#S7"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s7"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#possuiSensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s5"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#possuiSensor"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s6"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#geraLeitura"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s5"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura5"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#temValor"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura5"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura5"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#valorLeituraSensor"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura5"/>
+                                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#geraLeitura"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s6"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura6"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#temValor"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura6"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura6"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#valorLeituraSensor"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura6"/>
+                                                                                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#geraLeitura"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/s7"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura7"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#temValor"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/leitura7"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura7"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#valorLeituraSensor"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/valorLeitura7"/>
+                                                                                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology#necessitaManutencao"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/macmini/ontologies/2024/9/SensorEquipamentOntology/maquina"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

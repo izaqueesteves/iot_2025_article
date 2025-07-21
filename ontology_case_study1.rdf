@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:smartmaintenance="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#executeService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#executeService">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Equipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#happensUnder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#happensUnder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#EnviromentSensorData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#happensUnderHumidity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#happensUnderHumidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#happensUnderTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#happensUnderTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasAlert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasAlert">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasCriticality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasCriticality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasDateTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasDateTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#DateTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#isAType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#isAType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#EnviromentSensorData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#alertCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#alertCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#criticalityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#criticalityValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#humidityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#humidityValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#numberOfOccurrences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#numberOfOccurrences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#temperatureValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#temperatureValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#typeOfFailure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#typeOfFailure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#DateTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#DateTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#EnviromentSensorData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#EnviromentSensorData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Equipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Criticality"/>
+        <smartmaintenance:criticalityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</smartmaintenance:criticalityValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+        <smartmaintenance:happensUnderHumidity rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity1"/>
+        <smartmaintenance:happensUnderHumidity rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature1"/>
+        <smartmaintenance:happensUnderTemperature rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature1"/>
+        <smartmaintenance:numberOfOccurrences rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</smartmaintenance:numberOfOccurrences>
+        <smartmaintenance:typeOfFailure rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</smartmaintenance:typeOfFailure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity"/>
+        <smartmaintenance:humidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</smartmaintenance:humidityValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+        <smartmaintenance:temperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</smartmaintenance:temperatureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#humid">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#temp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#type">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#num">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Alert"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Humidity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#humidityValue"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#humid"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#temperatureValue"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#temp"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="urn:swrl:var#humid"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                                <swrl:arguments>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:resource="urn:swrl:var#temp"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#alertCode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#temperatureValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#temp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Failure"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#temp"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#type"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#Temperature"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#numberOfOccurrences"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#num"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#typeOfFailure"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#type"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                                <swrl:arguments>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:resource="urn:swrl:var#num"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/4/smartmaintenance#alertCode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
