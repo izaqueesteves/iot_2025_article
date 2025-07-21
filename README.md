@@ -1,0 +1,1 @@
+The files, data storage structures in relational databases, machine learning models and ontologies for enriching information about failures are considered in two case studies: (1) processing of machine failure data from a textile industry and (2) processing of sensor data from heat treatment furnaces in a metallurgical industry.
